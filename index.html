@@ -42,7 +42,7 @@
         <script>
             document.onreadystatechange = function(event) {
                 if (document.readyState === "complete") {
-                    var hashPath = window.location.href.split("#")[0];
+                    var hashPath = window.location.href.split("#")[1];
                         if(hashPath != null){
                             document.querySelector('#sample-swfs').value = hashPath;
                         }
