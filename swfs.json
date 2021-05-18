@@ -1,0 +1,18 @@
+{
+  "swfs": [
+    {
+      "location": "swfs/odd-todd/elfup.swf",
+      "title": "Elf Up",
+      "author": "Odd Todd",
+      "authorLink": "https://www.oddtodd.com",
+      "type": "Humor"
+    },
+    {
+      "location": "swfs/odd-todd/laidoff2.swf",
+      "title": "Laid Off",
+      "author": "Odd Todd",
+      "authorLink": "https://www.oddtodd.com",
+      "type": "Humor"
+    }
+  ]
+}
