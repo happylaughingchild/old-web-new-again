@@ -25,7 +25,8 @@
                     <span id="sample-swfs-label">Sample SWF:</span>
                     <select id="sample-swfs">
                         <option value="none">None</option>
-                        <optgroup id="anim-optgroup" label="Humor"></optgroup>
+                        <optgroup id="anim-optgroup" label="Animation"></optgroup>
+                        <optgroup id="games-optgroup" label="Games"></optgroup>
                     </select>
                     <div id="author-container" class="hidden">
                         <span>Author: </span><a href="#" target="_blank" id="author"></a>
@@ -38,5 +39,11 @@
             <div id="prompt">Select a demo or drag an SWF</div>
         </div>
         <script src="ruffle.js"></script>
+        <script>
+            var hashPath = window.location.href.split("#")[0];
+            if(hashPath != null){
+                je.load(hashPath);
+            }
+        </script>
     </body>
 </html>
