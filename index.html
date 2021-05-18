@@ -44,7 +44,9 @@
                 if (document.readyState === "complete") {
                     var hashPath = window.location.href.split("#")[1];
                         if(hashPath != null){
-                            document.querySelector('#sample-swfs').value = hashPath;
+                            var selector = document.querySelector('#sample-swfs')
+                            selector.value = hashPath;
+                            selector.dispatchEvent(new Event('change'));
                         }
                 }
             };  
