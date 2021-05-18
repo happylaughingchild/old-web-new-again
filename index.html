@@ -44,7 +44,7 @@
                 if (document.readyState === "complete") {
                     var hashPath = window.location.href.split("#")[0];
                         if(hashPath != null){
-                            je.load(hashPath);
+                            document.querySelector('#sample-swfs').value = hashPath;
                         }
                 }
             };  
