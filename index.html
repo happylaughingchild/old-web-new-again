@@ -40,10 +40,14 @@
         </div>
         <script src="ruffle.js"></script>
         <script>
-            var hashPath = window.location.href.split("#")[0];
-            if(hashPath != null){
-                je.load(hashPath);
-            }
+            document.onreadystatechange = function(event) {
+                if (document.readyState === "complete") {
+                    var hashPath = window.location.href.split("#")[0];
+                        if(hashPath != null){
+                            je.load(hashPath);
+                        }
+                }
+            };  
         </script>
     </body>
 </html>
